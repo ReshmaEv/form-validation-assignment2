@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div id="overlay">
+        <div id="container">
+            <div id="newdiv">
+                <form action="" id="upForm">
+                    
+                    <input type="text" name="name" required placeholder="Name" id="username" onkeyup="validateName()"><br>
+                    <span id="username-error"></span>
+                   
+                    
+                    <input type="email" name="email" required id="email" placeholder="email" onkeyup="validateEmail()"><br>
+                    <span id="email-error"></span>
+                    
+                    
+                   
+                    <input type="password" name="password" required placeholder="password" id="password" onkeyup="validatePassword()"><br>
+                    <span id="password-error"></span>
+                    <div id="pass"></div>
+                   
+                    <input type="password" name="password" required id="repassword" placeholder="Confirm password" onkeyup="validateRepassword()"><br>
+                    <span id="repassword-error"></span><br>
+                    <button id="btn2" onclick=" goBack()">Back</button>
+                    <button id="btn"  onclick="subBtn()">Submit</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+    
+</body>
+</html>

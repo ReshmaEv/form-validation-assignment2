@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div id="overlay">
+        <div id="container">
+        <div id="second-div">
+            <form action="" id="form">
+                
+                <input type="email" id="email" name="email" required placeholder="Email" onkeyup="validateEmail()"><br>
+                <span id="email-error"></span>
+                
+                <input type="password" id="password" name="password" required   placeholder="Password" onkeyup="validatePassword()"><br>
+                <span id="password-error"></span><br>
+                <button id="first"  onclick="signInBtn()">Sign In</button>
+                <button id="second" onclick="openSignUpForm()">Sign Up</button>
+                
+                
+            </form>
+          
+            <div id="third">
+              <a href="forgot.html" >Forgot password?</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
